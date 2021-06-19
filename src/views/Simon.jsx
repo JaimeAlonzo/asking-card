@@ -53,7 +53,7 @@ function Simon({ won, setWon }) {
     console.log(clickedPattern);
     if (gamePattern[lastIndex] === clickedPattern[lastIndex]) {
       if (clickedPattern.length === currentLevel) {
-        if (level !== 1) {
+        if (level !== 8) {
           setTimeout(function () {
             newSequence();
             clickedPattern = [];
